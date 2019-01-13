@@ -8,7 +8,7 @@
 - name: Make sure ntp is configured
   template: src=ntp.conf.j2 dest=/etc/ntp.conf
   notify:
-    - restart ntpd
+    - restart ntp
   tags: ntp
 
 - name: Make sure ntpd is running and enabled
